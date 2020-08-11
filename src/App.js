@@ -16,6 +16,7 @@ function App() {
         <WrongLetters />
         <Word />
         <Popup />
+        <Notification />
       </div>
     </div>
   );
