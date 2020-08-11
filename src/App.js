@@ -6,7 +6,7 @@ import WrongLetters from "./components/WrongLetters";
 import Word from "./components/Word";
 import Popup from "./components/Popup";
 import Notification from "./components/Notification";
-import { showNotification as show } from './helpers/helpers';
+import { showNotification as show } from "./helpers/helpers";
 
 const words = ["application", "programming", "interface", "wizard"];
 
@@ -17,7 +17,6 @@ function App() {
   const [correctLetters, setCorrectLetters] = useState([]);
   const [wrongLetters, setWrongLetters] = useState([]);
   const [showNotification, setShowNotification] = useState(false);
-
 
   useEffect(() => {
     const handleKeydown = (event) => {
@@ -53,9 +52,9 @@ function App() {
         <Figure wrongLetters={wrongLetters} />
         <WrongLetters wrongLetters={wrongLetters} />
         <Word selectedWord={selectedWord} correctLetters={correctLetters} />
-        <Popup />
-        <Notification />
       </div>
+      <Popup />
+      <Notification showNotification={showNotification} />
     </div>
   );
 }
