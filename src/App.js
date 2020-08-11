@@ -8,14 +8,14 @@ import Popup from "./components/Popup";
 import Notification from "./components/Notification";
 
 
-const words = ['application', 'programming', 'interface', 'wizard'];
+// const words = ['application', 'programming', 'interface', 'wizard'];
 
-let selectedWord = words[Math.floor(Math.random() * words.length)];
+// let selectedWord = words[Math.floor(Math.random() * words.length)];
 
-let playable = true;
+// let playable = true;
 
-const correctLetters = [];
-const wrongLetters = [];
+// const correctLetters = [];
+// const wrongLetters = [];
 
 function App() {
   const [playable, setPlayable] = useState(true);
